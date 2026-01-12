@@ -63,6 +63,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          exit 0
           WORKFLOW_FILE="crawler.yml"
           API_URL="repos/${{ github.repository }}/actions/workflows/$WORKFLOW_FILE/runs"
 
